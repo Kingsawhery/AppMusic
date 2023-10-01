@@ -1,0 +1,117 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+@mixin handle-img($i){
+    background-image: $i;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+#main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:0 auto;
+    flex-direction: column;
+    position: relative;}
+.playing {
+        .fa-play{
+            display: none!important;
+        }
+}
+#dashboard{
+    position: fixed;
+    top:0;
+    max-width: 480px;
+    display: grid;
+    border-radius: 8px  ;
+    width: 350px;
+    background-color: #fd8787;
+    padding:12px;
+    
+    .cd{
+        width: 300px;
+        margin:20px auto;
+
+        .cd-thumb{
+            @include handle-img(url("../assets/images/img1.jpeg"));
+        width: 100%;
+            padding-top:100%;
+            border-radius: 50%;
+            }
+        }
+    }
+    header{
+        text-align: center;
+        p{
+            font-size: 0.8rem;
+            color:red;
+        }
+        h4{
+            color:#ffffff;
+            font-size:2rem;
+        }
+    }
+    .dashboard-control{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-bottom: 12px;
+        color:#ffffff;
+
+        .btn-toggle-play{
+            .fa{
+                padding:16px 20px;
+                border-radius: 50%;
+                color:#ffffff;
+                background-color:#ff2b2b;
+                ;
+            }
+            .fa-pause{
+                display: none;
+            }
+        }
+        i{
+            font-size: 20px;
+        }
+    }
+    input[type="range"]{
+        accent-color: red;
+    }
+#play-list{
+    margin-top:520px;
+    width: 356px;
+    .song{
+        margin: 8px 0;
+        display: flex;
+        align-items: center;
+        background-color: #fd8787;
+        padding:12px;
+        border-radius:8px;
+        .thumb{
+            border-radius: 50%;
+            padding:20px;
+            margin:0 12px;
+            @include handle-img(url("../assets/images/hieuthu2-01.webp"))
+        }
+        .song-body{
+            width: 100%;
+        }
+        .option{
+            margin-left:auto;
+        }
+    }
+}
+.playing{
+    .fa-play{
+        display: none;
+    }
+    .fa-pause{
+        display: block!important;
+    }
+}
+.active{
+    color:#ff2b2b;
+}

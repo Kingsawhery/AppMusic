@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./fontawesome-free-6.4.0-web/css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="/assets/images/img1.jpeg" type="image/x-icon">
+</head>
+<body>
+    <div id="main">
+        <div id="dashboard">
+            <header>
+                
+                <p>Songs starting:</p>
+                <h4>Name Song</h4>
+            </header>
+            <div class="cd">
+                <div class="cd-thumb">
+                    
+                </div>
+            </div>
+            <div class="dashboard-control">
+                <div class="btn btn-repeat">
+                    <i class="fa fa-redo"></i>
+                </div>
+                <div class="btn btn-prev">
+                    <i class="fa fa-step-backward"></i>
+
+                </div>
+                <div class="btn btn-toggle-play">
+                    <i class="fa fa-pause icon-pause"></i>
+                    <i class="fa fa-play icon-play"></i>
+
+                </div>
+                <div class="btn btn-next">
+                    <i class="fa fa-step-forward"></i>
+
+                </div>
+                <div class="btn btn-random">
+                    <i class="fa fa-random"></i>
+
+                </div>
+            </div>
+            <div class="time">
+                <p><span class="minute"></span><span class="second"></span></p>
+            </div>
+            <input id="progess" type="range" defaultValue="0" value="0" step="1" min="0" max="100">
+            <audio src="" id="audio"></audio>
+        </div>
+        <div id="play-list">
+            
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
